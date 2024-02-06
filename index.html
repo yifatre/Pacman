@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Pacman</title>
+	<link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body onload="onInit()" onkeyup="onMovePacman(event)">
+	<h1>Let's Play Pacman!</h1>
+	<h3>SCORE: <span class="score">0</span></h3>
+	<table class="board-container">
+		<tbody class="board"></tbody>
+	</table>
+	<button onclick="onInit()">Start New Game</button>
+	<div class="modal hide"><span class="msg"></span><button onclick="onInit()">Play Again</button></div>
+	
+	<script src="js/utils.js"></script>
+	<script src="js/pacman.js"></script>
+	<script src="js/ghost.js"></script>
+	<script src="js/game.js"></script>
+</body>
+
+</html>

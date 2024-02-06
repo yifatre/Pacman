@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(30, 30, 30);
+  color: rgb(220, 220, 220);
+  text-align: center;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.board-container {
+  margin: auto;
+}
+
+.cell {
+  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+.modal {
+  background-color: rgb(30, 30, 30);
+  position: relative;
+  margin: auto;
+  top: -400px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: antiquewhite;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.ghost,
+.wall,
+.super-food {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.pacman {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.up {
+  transform: rotate(-90deg)
+}
+
+.down {
+  transform: rotate(90deg)
+}
+
+.left {
+  transform: scale(-1, 1)
+}
+
+button {
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+  cursor: pointer;
+  background-color: rgb(220, 220, 220);
+}
